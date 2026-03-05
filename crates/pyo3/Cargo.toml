@@ -52,6 +52,7 @@ extension-module = [
   "nautilus-sandbox/extension-module",
   "nautilus-persistence/extension-module",
   "nautilus-serialization/extension-module",
+  "nautilus-stg/extension-module",
   "nautilus-tardis/extension-module",
   "nautilus-testkit/extension-module",
   "nautilus-trading/extension-module",
@@ -102,6 +103,7 @@ nautilus-model = { workspace = true, features = ["python"] }
 nautilus-network = { workspace = true, features = ["python"] }
 nautilus-persistence = { workspace = true, features = ["python"] }
 nautilus-serialization = { workspace = true, features = ["python"] }
+nautilus-stg = { workspace = true, features = ["python"] }
 nautilus-testkit = { workspace = true, features = ["python"] }
 nautilus-trading = { workspace = true, features = ["python"] }
 

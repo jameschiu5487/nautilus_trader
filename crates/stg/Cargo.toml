@@ -1,0 +1,33 @@
+[package]
+name = "nautilus-stg"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[lib]
+name = "nautilus_stg"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+nautilus-model = { workspace = true }
+nautilus-core = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+pyo3 = { workspace = true, optional = true }
+
+[features]
+default = []
+extension-module = ["pyo3/extension-module"]
+python = ["pyo3"]
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "book_bench"
+harness = false

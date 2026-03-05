@@ -35,6 +35,7 @@ members = [
   "crates/pyo3",
   "crates/risk",
   "crates/serialization",
+  "crates/stg",
   "crates/system",
   "crates/testkit",
   "crates/trading",
@@ -79,6 +80,7 @@ nautilus-portfolio = { path = "crates/portfolio", version = "0.55.0" }
 nautilus-pyo3 = { path = "crates/pyo3", version = "0.55.0" }
 nautilus-risk = { path = "crates/risk", version = "0.55.0" }
 nautilus-serialization = { path = "crates/serialization", version = "0.55.0" }
+nautilus-stg = { path = "crates/stg", version = "0.55.0" }
 nautilus-system = { path = "crates/system", version = "0.55.0" }
 nautilus-testkit = { path = "crates/testkit", version = "0.55.0" }
 nautilus-trading = { path = "crates/trading", version = "0.55.0" }

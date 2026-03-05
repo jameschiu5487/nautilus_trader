@@ -2101,6 +2101,32 @@ dependencies = [
 
 [[package]]
 name = "criterion"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f2b12d017a929603d80db1831cd3a24082f8137ce19c69e6447f54f5fc8d692f"
+dependencies = [
+ "anes",
+ "cast",
+ "ciborium",
+ "clap",
+ "criterion-plot 0.5.0",
+ "is-terminal",
+ "itertools 0.10.5",
+ "num-traits",
+ "once_cell",
+ "oorandom",
+ "plotters",
+ "rayon",
+ "regex",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "tinytemplate",
+ "walkdir",
+]
+
+[[package]]
+name = "criterion"
 version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "950046b2aa2492f9a536f5f4f9a3de7b9e2476e575e05bd6c333371add4d98f3"
@@ -2110,7 +2136,7 @@ dependencies = [
  "cast",
  "ciborium",
  "clap",
- "criterion-plot",
+ "criterion-plot 0.8.2",
  "itertools 0.13.0",
  "num-traits",
  "oorandom",
@@ -2120,6 +2146,16 @@ dependencies = [
  "serde_json",
  "tinytemplate",
  "walkdir",
+]
+
+[[package]]
+name = "criterion-plot"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6b50826342786a51a89e2da3a28f1c32b06e387201bc2d19791f622c673706b1"
+dependencies = [
+ "cast",
+ "itertools 0.10.5",
 ]
 
 [[package]]
@@ -4416,6 +4452,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "is-terminal"
+version = "0.4.17"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3640c1c38b8e4e43584d8df18be5fc6b0aa314ce6ebf51b53313d4306cca8e46"
+dependencies = [
+ "hermit-abi",
+ "libc",
+ "windows-sys 0.61.2",
+]
+
+[[package]]
 name = "is_terminal_polyfill"
 version = "1.70.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4851,7 +4898,7 @@ dependencies = [
  "aws-lc-rs",
  "axum",
  "chrono",
- "criterion",
+ "criterion 0.8.2",
  "dashmap",
  "derive_builder",
  "dotenvy",
@@ -4962,7 +5009,7 @@ dependencies = [
  "axum",
  "base64 0.22.1",
  "chrono",
- "criterion",
+ "criterion 0.8.2",
  "dashmap",
  "derive_builder",
  "dotenvy",
@@ -5006,7 +5053,7 @@ dependencies = [
  "aws-lc-rs",
  "axum",
  "chrono",
- "criterion",
+ "criterion 0.8.2",
  "dashmap",
  "derive_builder",
  "dotenvy",
@@ -5092,7 +5139,7 @@ dependencies = [
  "aws-lc-rs",
  "axum",
  "chrono",
- "criterion",
+ "criterion 0.8.2",
  "dashmap",
  "derive_builder",
  "dotenvy",
@@ -5158,7 +5205,7 @@ dependencies = [
  "capnp 0.25.1",
  "cbindgen",
  "chrono",
- "criterion",
+ "criterion 0.8.2",
  "derive_builder",
  "futures",
  "iai",
@@ -5198,7 +5245,7 @@ dependencies = [
  "bytes",
  "cbindgen",
  "chrono",
- "criterion",
+ "criterion 0.8.2",
  "heck",
  "iai",
  "indexmap 2.13.0",
@@ -5226,7 +5273,7 @@ dependencies = [
  "anyhow",
  "aws-lc-rs",
  "base64 0.22.1",
- "criterion",
+ "criterion 0.8.2",
  "ed25519-dalek",
  "hex",
  "log",
@@ -5304,7 +5351,7 @@ dependencies = [
  "aws-lc-rs",
  "axum",
  "chrono",
- "criterion",
+ "criterion 0.8.2",
  "dashmap",
  "derive_builder",
  "dotenvy",
@@ -5350,7 +5397,7 @@ dependencies = [
  "base64 0.22.1",
  "chrono",
  "cosmrs",
- "criterion",
+ "criterion 0.8.2",
  "dashmap",
  "derive_builder",
  "dotenvy",
@@ -5396,7 +5443,7 @@ dependencies = [
  "anyhow",
  "async-trait",
  "chrono",
- "criterion",
+ "criterion 0.8.2",
  "futures",
  "log",
  "nautilus-common",
@@ -5426,7 +5473,7 @@ dependencies = [
  "async-trait",
  "axum",
  "chrono",
- "criterion",
+ "criterion 0.8.2",
  "ctrlc",
  "dashmap",
  "derive_builder",
@@ -5521,7 +5568,7 @@ dependencies = [
  "axum",
  "base64 0.22.1",
  "chrono",
- "criterion",
+ "criterion 0.8.2",
  "dashmap",
  "derive_builder",
  "dotenvy",
@@ -5560,7 +5607,7 @@ dependencies = [
  "ahash 0.8.12",
  "anyhow",
  "async-trait",
- "criterion",
+ "criterion 0.8.2",
  "indexmap 2.13.0",
  "log",
  "nautilus-common",
@@ -5593,7 +5640,7 @@ dependencies = [
  "anyhow",
  "cbindgen",
  "chrono",
- "criterion",
+ "criterion 0.8.2",
  "derive_builder",
  "enum_dispatch",
  "evalexpr",
@@ -5625,7 +5672,7 @@ dependencies = [
  "anyhow",
  "axum",
  "bytes",
- "criterion",
+ "criterion 0.8.2",
  "dashmap",
  "futures",
  "futures-util",
@@ -5672,7 +5719,7 @@ dependencies = [
  "axum",
  "base64 0.22.1",
  "chrono",
- "criterion",
+ "criterion 0.8.2",
  "dashmap",
  "derive_builder",
  "dotenvy",
@@ -5714,7 +5761,7 @@ dependencies = [
  "arrow-row",
  "chrono",
  "chrono-tz",
- "criterion",
+ "criterion 0.8.2",
  "datafusion",
  "futures",
  "heck",
@@ -5836,6 +5883,7 @@ dependencies = [
  "nautilus-polymarket",
  "nautilus-sandbox",
  "nautilus-serialization",
+ "nautilus-stg",
  "nautilus-tardis",
  "nautilus-testkit",
  "nautilus-trading",
@@ -5894,7 +5942,7 @@ dependencies = [
  "arrow",
  "capnp 0.25.1",
  "capnpc",
- "criterion",
+ "criterion 0.8.2",
  "indexmap 2.13.0",
  "nautilus-core",
  "nautilus-model",
@@ -5909,6 +5957,18 @@ dependencies = [
  "ustr",
  "uuid",
  "walkdir",
+]
+
+[[package]]
+name = "nautilus-stg"
+version = "0.55.0"
+dependencies = [
+ "criterion 0.5.1",
+ "nautilus-core",
+ "nautilus-model",
+ "pyo3",
+ "serde",
+ "thiserror 2.0.18",
 ]
 
 [[package]]
@@ -6662,6 +6722,34 @@ name = "plain"
 version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b4596b6d070b27117e987119b4dac604f3c58cfb0b191112e24771b2faeac1a6"
+
+[[package]]
+name = "plotters"
+version = "0.3.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5aeb6f403d7a4911efb1e33402027fc44f29b5bf6def3effcc22d7bb75f2b747"
+dependencies = [
+ "num-traits",
+ "plotters-backend",
+ "plotters-svg",
+ "wasm-bindgen",
+ "web-sys",
+]
+
+[[package]]
+name = "plotters-backend"
+version = "0.3.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "df42e13c12958a16b3f7f4386b9ab1f3e7933914ecea48da7139435263a4172a"
+
+[[package]]
+name = "plotters-svg"
+version = "0.3.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "51bae2ac328883f7acdfea3d66a7c35751187f870bc81f94563733a154d7a670"
+dependencies = [
+ "plotters-backend",
+]
 
 [[package]]
 name = "portable-atomic"
